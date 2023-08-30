@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  frontend:
+    container_name: "frontend-container"
+    image: "frontend-image"
+    build:
+      context: ./frontend
+    ports: 
+      - "4173:4173"
